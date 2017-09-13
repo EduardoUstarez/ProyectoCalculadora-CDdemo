@@ -37,8 +37,17 @@ namespace ProyectoCalculadora.Controllers
         [HttpPost]
         public ActionResult Index(CalculadoraModel model)
         {
-            int resultado = 0;
-            ViewBag.resultado = resultado;
+      int resultado = 0;
+      switch (model.operacion)
+      {
+        case "+":
+          resultado = model.numero1 + model.numero2;
+          break;
+        default:
+          break;
+      }
+
+         ViewBag.resultado = resultado;
 
             return View();
         }
