@@ -1,5 +1,5 @@
 #!groovy
-def msbuildLocation = "'C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\amd64\\MSBuild.exe'"
+def msbuildLocation1 = "'C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\amd64\\MSBuild.exe'"
 def nugetLocation = "'C:\\NuGet\\nuget.exe'"
 def publishUrl = "C:\\ArtifactRepo\\ProyectoCalculadora\\${env.BUILD_NUMBER}"
 
@@ -20,7 +20,7 @@ pipeline {
         stage ('Build & Publish Website') {
             steps {
                 powershell 'Write-Output "******************** Build & Publish Solution  ************************"'
-                powershell "& ${msbuildLocation} ProyectoCalculadora.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl=${publishUrl}"
+                powershell "& ${msbuildLocation1} ProyectoCalculadora.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl=${publishUrl}"
             }
         }
     }
