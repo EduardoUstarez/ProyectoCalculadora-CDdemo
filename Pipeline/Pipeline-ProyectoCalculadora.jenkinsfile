@@ -13,7 +13,7 @@ pipeline {
                 powershell "& ${nugetLocation} restore ProyectoCalculadora.sln"
                 
                 powershell 'Write-Output "******************** Clean Solution  ************************"'
-                powershell "& ${msbuildLocation} ProyectoCalculadora.sln /t:Clean /p:Configuration=Release"
+                powershell "& ${msbuildLocation1} ProyectoCalculadora.sln /t:Clean /p:Configuration=Release"
             }
         }
         
