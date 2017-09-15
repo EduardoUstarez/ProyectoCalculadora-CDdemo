@@ -12,3 +12,7 @@ NUnit-ProyectoCalculadora/obj/Debug/
 UnitTests-ProyectoCalculadora/bin/Debug/
 
 UnitTests-ProyectoCalculadora/obj/Debug/
+
+NUnit-ProyectoCalculadora/bin/Microsoft\.CodeDom\.Providers\.DotNetCompilerPlatform\.dll
+
+NUnit-ProyectoCalculadora/bin/Microsoft\.CodeDom\.Providers\.DotNetCompilerPlatform\.xml
