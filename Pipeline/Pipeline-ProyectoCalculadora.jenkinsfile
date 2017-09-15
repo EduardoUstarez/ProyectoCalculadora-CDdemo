@@ -40,7 +40,11 @@ pipeline {
 		stage ('Run Unit Tests') {
             steps {
                 powershell 'Write-Output "******************** Run Unit Tests  ************************"'
+<<<<<<< HEAD
                 //powershell "& ${nunitLocation} .\\NUnit-ProyectoCalculadora\\bin\\Debug\\NUnit-ProyectoCalculadora.dll"
+=======
+                powershell "& ${nunitLocation} .\\NUnit-ProyectoCalculadora\\bin\\Debug\\NUnit-ProyectoCalculadora.dll"
+>>>>>>> develop
 			}
         }
         
